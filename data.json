@@ -1,0 +1,12 @@
+{
+  "studentId": "STU001",
+  "studentName": "John Doe",
+  "testDate": "2024-12-20",
+  "overallScore": 7.5,
+  "skills": {
+    "pronunciation": 8.0,
+    "fluency": 7.5,
+    "vocabulary": 7.0,
+    "grammar": 7.5
+  }
+}
