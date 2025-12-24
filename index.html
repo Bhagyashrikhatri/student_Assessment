@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Speaking Assessment Report</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Speaking Assessment Report</h1>
+            <div class="student-info" id="studentInfo">
+                <p><strong>Student:</strong> <span id="studentName">Loading...</span></p>
+                <p><strong>Test Date:</strong> <span id="testDate">Loading...</span></p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Summary of Scores Section -->
+            <section class="summary-section">
+                <h2>Summary of Scores</h2>
+                
+                <!-- Overall Score -->
+                <div class="overall-score-card">
+                    <div class="score-circle">
+                        <div class="score-value" id="overallScore">--</div>
+                        <div class="score-label">/ 9</div>
+                    </div>
+                    <div class="overall-info">
+                        <h3>Overall Speaking Score</h3>
+                        <p class="score-description" id="overallDescription">Loading...</p>
+                    </div>
+                </div>
+
+                <!-- Skills Grid -->
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h4>Pronunciation</h4>
+                            <span class="skill-score" id="pronunciationScore">--</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="pronunciationProgress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h4>Fluency</h4>
+                            <span class="skill-score" id="fluencyScore">--</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="fluencyProgress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h4>Vocabulary</h4>
+                            <span class="skill-score" id="vocabularyScore">--</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="vocabularyProgress"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <h4>Grammar</h4>
+                            <span class="skill-score" id="grammarScore">--</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="grammarProgress"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Charts Section -->
+                <div class="charts-container">
+                    <div class="chart-box">
+                        <h3>Skills Comparison</h3>
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                    <div class="chart-box">
+                        <h3>Individual Skills</h3>
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Descriptive Feedback Section -->
+            <section class="feedback-section">
+                <h2>Descriptive Feedback</h2>
+                
+                <div class="feedback-card">
+                    <h3>Overall Performance</h3>
+                    <p id="overallFeedback">Loading feedback...</p>
+                </div>
+
+                <div class="feedback-grid">
+                    <div class="feedback-card">
+                        <h4>🗣️ Pronunciation</h4>
+                        <p id="pronunciationFeedback">Loading...</p>
+                    </div>
+
+                    <div class="feedback-card">
+                        <h4>⚡ Fluency</h4>
+                        <p id="fluencyFeedback">Loading...</p>
+                    </div>
+
+                    <div class="feedback-card">
+                        <h4>📚 Vocabulary</h4>
+                        <p id="vocabularyFeedback">Loading...</p>
+                    </div>
+
+                    <div class="feedback-card">
+                        <h4>✏️ Grammar</h4>
+                        <p id="grammarFeedback">Loading...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Student Assessment Report System © 2024</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
